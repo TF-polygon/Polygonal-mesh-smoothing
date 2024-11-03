@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polygonal-mesh-smoothing", "polygonal-mesh-smoothing\polygonal-mesh-smoothing.vcxproj", "{7C237FDF-656D-49D0-8F3E-721682BC59F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Debug|x64.ActiveCfg = Debug|x64
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Debug|x64.Build.0 = Debug|x64
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Debug|x86.Build.0 = Debug|Win32
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Release|x64.ActiveCfg = Release|x64
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Release|x64.Build.0 = Release|x64
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Release|x86.ActiveCfg = Release|Win32
+		{7C237FDF-656D-49D0-8F3E-721682BC59F8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {212F9179-D1EF-406C-81CB-A6650957DA3E}
+	EndGlobalSection
+EndGlobal
