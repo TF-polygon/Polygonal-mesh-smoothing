@@ -13,8 +13,8 @@ $$\frac{1}{\vert N_i \vert}(\displaystyle\sum_{j\in N_i}{P_j})-P_i$$
 this method는 object가 부드러워지는 목적은 달성했지만 원본 Feature가 무너지는 현상을 확인할 수가 있다. 극단적으로 많은 Iteration이 실행되었을 때는 원본이 알아보기 힘들정도 무너져있는 것을 확인할 수 있다.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2f583a1b-3084-45be-afc1-d0d5d889e95e">
-  <b>Figure 1.</b> A standard object rendering (pictured left) and result of laplacian smoothing (pictured right).
+  <img src="https://github.com/user-attachments/assets/d039f2f5-0dfe-4a87-95d3-e06d9ba7ee36">
+  <b>Figure 1.</b> A standard object rendering (pictured left) and result of vertices average smoothing (pictured right).
 </p>
 
 이를 개선하기 위해 Laplacian Smoothing이 제안되었다.
@@ -22,7 +22,14 @@ this method는 object가 부드러워지는 목적은 달성했지만 원본 Fea
 ## Laplacian Smoothing
 $$P_i \leftarrow P_i + \lambda L(P_i)$$
 
-기준점 $P_i$가 있을 때 인접 Vertex $P_{i+1}$과 $P_{i-1}$의 각각의 위치 Vector를 기반으로 벡터 합 연산을 이전 Average Smoothing과 동일하게 구한다. Average Smoothing과 다른 점은 평균값에 의한 이동의 격차가 매우 큰 것을 감안해서 인접 Vertex간의 연산 결과인 새로운 벡터가 가리키는 방향의 크기를 $\frac{1}{2}$ 한 것으로 좀 더 원본 Feature를 유지할 수 있게 되었다. 하지만 이 방식도 결국에는 원본 Feature가 무너지게 된다. Average Smoothing과 비교했을 때 덜 무너지는 것은 확인할 수 있다. 3D Mesh는 아래 식을 참고할 수 있다. 
+기준점 $P_i$가 있을 때 인접 Vertex $P_{i+1}$과 $P_{i-1}$의 각각의 위치 Vector를 기반으로 벡터 합 연산을 이전 Average Smoothing과 동일하게 구한다. Average Smoothing과 다른 점은 평균값에 의한 이동의 격차가 매우 큰 것을 감안해서 인접 Vertex간의 연산 결과인 새로운 벡터가 가리키는 방향의 크기를 $\frac{1}{2}$ 한 것으로 좀 더 원본 Feature를 유지할 수 있게 되었다. 하지만 이 방식도 결국에는 원본 Feature가 무너지게 된다. Average Smoothing과 비교했을 때 덜 무너지는 것은 확인할 수 있다. 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/955320c6-235c-4c78-b3bb-db1d153456bf" width="350" height="250"><br>
+  <b>Figure 2.</b> Result of laplacian smoothing with 100 iterations. 원본 Feature가 많이 유지되면서 표면이 매끄러워진다.
+</p>
+
+3D Mesh는 아래 식을 참고할 수 있다. 
 
 $$P_i^{(t+1)}=P_i^{(t)}+\lambda L(P_i^{(t)})$$
 
@@ -53,7 +60,7 @@ $$L(P_i)=\frac{1}{\sum_{j\in N_i}{W_{ij}}}(\displaystyle\sum_{j\in N_i}{W_{ij} P
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5e73eba3-4931-46ee-9fa9-97b06caff32a">
-  <b>Figure 2.</b> A result of cotangent-weighted laplacian smoothing(pictured right). Shows that the origin features are sharply preserved despite a large number of smoothing iterations.
+  <b>Figure 3.</b> A result of cotangent-weighted laplacian smoothing(pictured right). Shows that the origin features are sharply preserved despite a large number of smoothing iterations.
 </p>
 
 ## Control
