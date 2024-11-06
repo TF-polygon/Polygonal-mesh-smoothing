@@ -66,8 +66,8 @@ $$L(P_i)=\frac{1}{\sum_{j\in N_i}{W_{ij}}}(\displaystyle\sum_{j\in N_i}{W_{ij} P
 We make a data structure `Edge` to search adjacency face and insert functions needed. This project shows an way how to get edge informations using information both vertices and face.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5e73eba3-4931-46ee-9fa9-97b06caff32a">
-  <b>Figure 3.</b> A result of cotangent-weighted laplacian smoothing(pictured right). Shows that the origin features are sharply preserved despite a large number of smoothing iterations.
+  <img src="https://github.com/user-attachments/assets/dc88b1c3-4725-475d-bb0e-f197d135b30a">
+  <b>Figure 3.</b> A result of cotangent-weighted laplacian smoothing. Shows that the origin features are sharply preserved despite a large number of smoothing iterations.
 </p>
 
 ## Control
