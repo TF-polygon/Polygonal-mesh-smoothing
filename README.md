@@ -86,8 +86,7 @@ The loaded object goes through several steps to draw the mesh. The triangle-base
 **Windows OS**
 ```
 Visual Studio 2019 / Release x86
-GLUT
-GLEW
+OpenGL GLUT/GLEW
 ```
 ```
 # My Experimental Environment
