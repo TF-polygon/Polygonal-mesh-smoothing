@@ -96,3 +96,6 @@ GPU NVIDIA GeForce GT 730
 
 ## Load an .obj file
 (To be uploaded)
+
+### Reference
+Leonidas Guibas Computer Science Department, Stanford University, "Computer Graphics -- Geometric Modeling and Processing" [[**Link**](https://graphics.stanford.edu/courses/cs468-12-spring/LectureSlides/06_smoothing.pdf)]
